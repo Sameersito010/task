@@ -13,7 +13,7 @@
     <select class="form-control" [(ngModel)]="basecurrency">
       <option [value]="cur" *ngFor="let cur of current" class="form-control">{{cur}}</option>
     </select>
-    <input type="text" class="form-control" [(ngModel)]="amount">
+    <input type="text" class="form-control my-2" [(ngModel)]="amount" >
   </div>
 </div>
 <div class="col-md-6">
@@ -21,7 +21,7 @@
     <select class="form-control" [(ngModel)]="tragetcurrency">
       <option [value]="cur" *ngFor="let cur of current" class="form-control">{{cur}}</option>
     </select>
-    <input type="text" class="form-control" [(ngModel)]="result">
+    <input type="text" class="form-control my-2" [(ngModel)]="result">
   </div>
 </div>
 <button class="btn btn-primary" type="button" (click)="onconvert()">Convert</button>
